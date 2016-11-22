@@ -1,43 +1,327 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+ul,ol{
+    list-style:none;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+html, body  { height: 100%;}
+/* navigation*/
+/*@media only screen and (min-width:768px){
+    header .nav-lg ul{
+     float:right;
+        margin-right:150px;
+    }
+
+    header .nav-lg li{
+        display:inline-block;
+        border:0;
+        padding:40px 25px 11px;
+        font-size:16px;
+
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
+    header .logo a{
+        float:left;
+        font-size:32px;
+        padding:20px 50px 10px;
+        font-family:'American Typewriter',Athelas;
+    }
+
+    .nav-sm{
+        display:none;
+    }
+
 }
-a {
-    text-decoration: none;
-    color: #999;
+*/
+header {
+    background-color: #ffffff;
+    border-bottom: solid 1px #adadad;
 }
-a:hover {
-    text-decoration: underline;
+header .nav{
+margin:10px 20px 0px 20px;
 }
-h1 {
+
+header .nav li a {
+    padding:0;
+    margin:0;
+    color:#4c4c4c;
+    font-weight:200;
+    letter-spacing: 0.05em;
+
+}
+header .nav li a:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: #191919;
+
+}
+
+
+header .nav li {
+    display: inline-block;
+    float: right;
+    padding: 10px 20px;
+    right: 100px;
+    font-size: 22px;
+}
+
+/*container*/
+.container{
+    max-width:1280px;
+    padding:40px 40px;
+}
+
+@media only screen and (max-width:768px){
+    .container{
+        padding:60px 20px;
+        min-width:280px;
+    }
+}
+
+
+/* About*/
+#cover{
+    position:relative;
+    width:100%;
+    height:600px;
+}
+#cover .coverphoto{
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+    background-size: cover;
+    background-position: center left;
+    height:100%;
+}
+.about-text{
+    width:400px;
+    padding:20px;
+}
+
+.about-text h2{
+    margin-top:50px;
+    font-size:32px;
+}
+
+.about-text p{
+    margin-top:30px;
+}
+
+.about .selfie img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding:10px;
+    border-radius: 3px;
+}
+
+#content h2{
+    margin-top:30px;
+    margin-bottom: 50px;
+    text-align: center;
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: Avenir,'Lantinghei SC', sans-serif;
+    letter-spacing:0.04em;
+    text-decoration: none;
+    font-weight:lighter;
 }
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+
+/* project*/
+section.project{
+    background-color: #ffffff;
 }
+
+.portfolio{
+    background-color: #f5f5f5;
+    text-align: center;
+
+    /*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);*/
+}
+.project .pf-left{
+
+}
+
+.project .pf-right{
+}
+.project .pf-img{
+    width:70%;
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+}
+.project .pf-img img{
+    width:100%;
+    height:100%;
+    border-radius: 18px;
+}
+.project .pf-img .readmore-wrapper{
+    width:100%;
+    height:100%;
+    border-radius:18px;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left:999px;
+    background:rgba(0,0,0,0.7) none repeat scroll !important;
+    background:#000;
+    filter:Alpha(opacity=70);
+   /* background: #000;
+       opacity:0.7;
+    -moz-opacity:0.7;
+    filter:alpha(opacity=70);
+     transition:right 0.4s ease-in-out;
+    -o-transition: right 0.4s ease-in-out;
+    -ms-transition: right 0.4s ease-in-out;
+    -moz-transition: right 0.4s ease-in-out;
+    -webkit-transition: right 0.4s ease-in-out;
+    */
+}
+.project .pf-img .readmore-wrapper .readmore{
+    position:relative;
+    top: 20%;
+}
+.project .pf-img .readmore-wrapper .readmore a{
+    position:relative;
+    cursor: pointer;
+    font-size:16px;
+    margin:10px auto;
+    display: block;
+    width:130px;
+    padding:8px;
+    border-radius:10px;
+    text-align: center;
+    background-color:rgba(255,255,255,0.8);
+}
+
+.project .pf-img .readmore-wrapper .readmore a:hover{
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.project .pf-text{
+}
+
+.project .pf-text h3{
+}
+/* ability */
+
+/*skill bar*/
+.ability h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ability .code ul li{
+    margin:30px 0;
+}
+.ability .code ul li p{
+    display:inline-block;
+    width:140px;
+    margin:0;
+}
+.ability .code ul li .progressbar{
+    display:inline-block;
+    vertical-align: -0.4em;
+
+}
+progress[value] { /* style rules */
+    width:60%;
+    height:1.5em;
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress::-webkit-progress-bar {
+    /* style rules */
+}
+progress::-webkit-progress-value {
+    /* style rules */
+}
+progress::-moz-progress-bar {
+    /* style rules */
+}
+
+/* contact */
+
+#contact{
+    background-color: #f5f5f5;
+    padding:40px;
+
+}
+
+#contact div#email, #footer h2{
+    text-align: center;
+}
+#contact #email li{
+
+}
+#contact #email a{
+
+}
+
+
+/*social icon*/
+.social {
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+.social ul li {
+    margin: 20px;
+    list-style: none outside none;
+    display: inline-block;
+}
+.social i {
+    width: 50px;
+    height: 50px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 17px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+.social .fa-facebook{ /* round facebook icon*/
+    background: #4060A5;
+}
+.social .fa-twitter{ /* round twitter icon*/
+    background: #00ABE3;
+}
+.social .fa-github{ /* round github icon*/
+     background: #343434;
+ }
+.social .fa-linkedin{ /* round linkedin icon*/
+    background: #0094BC;
+}
+.social .fa:hover{ /* round facebook icon*/
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+/*footer*/
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    height: 70px;
+    background-color: #4d4d4d;
+    width: 100%;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
 
-ul.posts li {
-    list-style: none;
-}
+
+
+
