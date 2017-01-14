@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="applicable-device"content="pc,mobile"/>
+    <meta name="applicable-device" content="pc,mobile"/>
     <title>Jie Rong</title>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -14,21 +14,35 @@
 </head>
 <body>
 <header id="header" class="clearfix">
-<ul class="nav">
-    <li><a>contacts</a></li>
-    <li><a>abilities</a></li>
-    <li><a>projects</a></li>
-    <li><a>about</a></li>
-</ul>
+    <ul class="nav">
+        <li><a href="#about">about</a></li>
+        <li><a href="#project">projects</a></li>
+        <li><a href="#ability">abilities</a></li>
+        <li><a href="#contact">contacts</a></li>
+    </ul>
+</header>
+
+<header id="sticker-header" class="clearfix">
+    <ul class="nav">
+        <li><a href="#about">about</a></li>
+        <li><a href="#project">projects</a></li>
+        <li><a href="#ability">abilities</a></li>
+        <li><a href="#contact">contacts</a></li>
+    </ul>
 </header>
 
 <div id ='content' class="">
-    <section class="about container" id="cover">
-        <div class='coverphoto' style="background-image:url(image/coversm.jpg)">
+
+    <section id="about" class="container item" >
+        <div class='coverphoto' style="background-image:url(image/coversm1.jpg)">
+            <h1>Hello, I'm Jie</h1>
+            <h2></h2>
+            <h2>  a lifelong learner, JavaScript lover and web developer</h2>
+            <p></p>
         </div>
     </section>
 
-    <section class="project container">
+    <section id='project' class="container item">
         <h2>PROJECTS</h2>
         <h3></h3>
         <div class="row">
@@ -136,9 +150,63 @@
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="portfolio clearfix col-md-4 pf-left">
+                <div class="pf-img">
+                    <img src="image/2048.png" alt=" ">
+                    <div class="readmore-wrapper">
+                        <div class="readmore">
+                            <a src="">See Demo</a>
+                            <a src="">Read More</a>
+                            <a src="">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pf-text">
+                    <h3>2048 Game</h3>
+                    <p>Under the Trips tab, you'll see a series of "experiences" listed, which includes trips that last a few hours and multi-day packages. For example, one experience includes spending three days with Nelson Mandela's former prison guard and cook, Jack Swart, in South Africa.</p>
+                </div>
+            </div>
+
+            <div class="portfolio clearfix col-md-4 pf-mid">
+                <div class="pf-img">
+                    <img src="image/2048.png" alt=" ">
+                    <div class="readmore-wrapper">
+                        <div class="readmore">
+                            <a src="">See Demo</a>
+                            <a src="">Read More</a>
+                            <a src="">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pf-text">
+                    <h3>2048 Game</h3>
+                    <p>Under the Trips tab, you'll see a series of "experiences" listed, which includes trips that last a few hours and multi-day packages. For example, one experience includes spending three days with Nelson Mandela's former prison guard and cook, Jack Swart, in South Africa.</p>
+                </div>
+            </div>
+
+            <div class="portfolio clearfix col-md-4 pf-right">
+                <div class="pf-img">
+                    <img src="image/2048.png" alt=" ">
+                    <div class="readmore-wrapper">
+                        <div class="readmore">
+                            <a src="">See Demo</a>
+                            <a src="">Read More</a>
+                            <a src="">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pf-text">
+                    <h3>2048 Game</h3>
+                    <p>Under the Trips tab, you'll see a series of "experiences" listed, which includes trips that last a few hours and multi-day packages. For example, one experience includes spending three days with Nelson Mandela's former prison guard and cook, Jack Swart, in South Africa.</p>
+                </div>
+            </div>
+        </div>
+
     </section>
 
-    <section class="ability container">
+    <section id="ability" class="container item">
         <h2>ABILITIES</h2>
         <h3></h3>
         <div class="row">
@@ -186,7 +254,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="item">
         <h2>CONTACT</h2>
         <h3></h3>
         <div id="email" class="icon">

@@ -33,9 +33,12 @@ html, body  { height: 100%;}
 header {
     background-color: #ffffff;
     border-bottom: solid 1px #adadad;
+    width:100%;
 }
+
 header .nav{
-margin:10px 20px 0px 20px;
+    margin:10px auto 0px auto;
+    text-align: center;
 }
 
 header .nav li a {
@@ -56,10 +59,21 @@ header .nav li a:hover {
 
 header .nav li {
     display: inline-block;
-    float: right;
-    padding: 10px 20px;
-    right: 100px;
-    font-size: 22px;
+    /*float: right;*/
+    padding: 10px 30px;
+    /*right: 100px;*/
+    font-size: 18px;
+}
+
+header#sticker-header{
+    display:none;
+    position:fixed;
+    top:0;
+    z-index:999;
+}
+
+.current{
+    border-bottom: solid 2px;
 }
 
 /*container*/
@@ -77,12 +91,12 @@ header .nav li {
 
 
 /* About*/
-#cover{
+#about{
     position:relative;
     width:100%;
     height:600px;
 }
-#cover .coverphoto{
+#about .coverphoto{
     background-repeat:no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -105,7 +119,7 @@ header .nav li {
     margin-top:30px;
 }
 
-.about .selfie img{
+#about .selfie img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding:10px;
     border-radius: 3px;
@@ -123,7 +137,7 @@ header .nav li {
 }
 
 /* project*/
-section.project{
+section#project{
     background-color: #ffffff;
 }
 
@@ -133,29 +147,29 @@ section.project{
 
     /*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);*/
 }
-.project .pf-left{
+#project .pf-left{
 
 }
 
-.project .pf-right{
+#project .pf-right{
 }
-.project .pf-img{
+#project .pf-img{
     width:70%;
     margin: 25px auto;
     position: relative;
     overflow: hidden;
 }
-.project .pf-img img{
+#project .pf-img img{
     width:100%;
     height:100%;
     border-radius: 18px;
 }
-.project .pf-img .readmore-wrapper{
+#project .pf-img .readmore-wrapper{
     width:100%;
     height:100%;
     border-radius:18px;
     position: absolute;
-    z-index: 999;
+    z-index: 99;
     top:0;
     left:999px;
     background:rgba(0,0,0,0.7) none repeat scroll !important;
@@ -172,11 +186,11 @@ section.project{
     -webkit-transition: right 0.4s ease-in-out;
     */
 }
-.project .pf-img .readmore-wrapper .readmore{
+#project .pf-img .readmore-wrapper .readmore{
     position:relative;
     top: 20%;
 }
-.project .pf-img .readmore-wrapper .readmore a{
+#project .pf-img .readmore-wrapper .readmore a{
     position:relative;
     cursor: pointer;
     font-size:16px;
@@ -189,32 +203,32 @@ section.project{
     background-color:rgba(255,255,255,0.8);
 }
 
-.project .pf-img .readmore-wrapper .readmore a:hover{
+#project .pf-img .readmore-wrapper .readmore a:hover{
     text-decoration: none;
     background-color: rgba(255,255,255,0.9);
 }
 
-.project .pf-text{
+#project .pf-text{
 }
 
-.project .pf-text h3{
+#project .pf-text h3{
 }
 /* ability */
 
 /*skill bar*/
-.ability h3{
+#ability h3{
     text-align: center;
     margin-bottom: 20px;
 }
-.ability .code ul li{
+#ability .code ul li{
     margin:30px 0;
 }
-.ability .code ul li p{
+#ability .code ul li p{
     display:inline-block;
     width:140px;
     margin:0;
 }
-.ability .code ul li .progressbar{
+#ability .code ul li .progressbar{
     display:inline-block;
     vertical-align: -0.4em;
 
